@@ -1,0 +1,32 @@
+﻿<div class="bodyContent">
+    <div class="dvSlideShowContainer" style="width:{{ windowWidth }}px;overflow:hidden">
+        <div class="dvSliderParent"  style="width:{{ windowWidth * 4 }}px;transform:translateX({{style}}px)">
+            <div class="dvSliderChildren" style="width:{{ windowWidth }}px;" >
+                <img style="width:{{ windowWidth }}px;overflow:hidden" src="https://rukminim1.flixcart.com/flap/1688/280/image/e9fd495eb4323237.jpg?q=50" alt="HPW_RM X7 Max" />
+            </div>
+            <div class="dvSliderChildren" style="width:{{ windowWidth }}px;" >
+                <img style="width:{{ windowWidth }}px;overflow:hidden" src="https://rukminim1.flixcart.com/flap/1688/280/image/f24499872124a69c.jpg?q=50" alt="Laptop" />
+            </div>
+            <div class="dvSliderChildren" style="width:{{ windowWidth }}px;" >
+                <img style="width:{{ windowWidth }}px;overflow:hidden" src="https://rukminim1.flixcart.com/flap/1688/280/image/c6142feb73141781.jpg?q=50" alt="Samsung Fridge" />
+            </div>
+            <div class="dvSliderChildren" style="width:{{ windowWidth }}px;" >
+                <img style="width:{{ windowWidth }}px;overflow:hidden" src="https://rukminim1.flixcart.com/flap/1688/280/image/1c910fad263a7475.jpg?q=50" alt="Boat dolby" />
+            </div>
+        </div>
+    </div>
+    <div class="dvDealsOftheDayContainer">
+        <div class="dvDODHeader"><h4>Deals Of the Day</h4></div>
+        <div class="dvDODParent">
+            <div class="dvDODChild" ng-repeat="productItem in productItems">
+                <div class="productImg">
+                    <img ng-src={{productItem.imgSrc}} ng-alt={{productItem.tooltip}} />
+                </div>
+                <div class="productName">{{productItem.pname}}</div>
+                <div class="productRate">{{productItem.prateStr}}</div>
+                <div class="addCart" ng-style= "{{cartItems.indexOf(productItem.p_key.toString()) === -1  ? {'display':''} : {'display':'none'} }} " data-pkey={{productItem.p_key}} ng-click="addItemFuncProp($event,productItem.p_key)">Add to Cart</div>
+                <div class="removeCart" ng-style= "{{cartItems.indexOf(productItem.p_key.toString()) === -1  ? {'display':'none'} : {'display':''} }}" data-pkey={{productItem.p_key}} ng-click="rmvItemFuncProp($event,productItem.p_key)">Remove from Cart</div>
+            </div>
+        </div>
+    </div>
+</div>

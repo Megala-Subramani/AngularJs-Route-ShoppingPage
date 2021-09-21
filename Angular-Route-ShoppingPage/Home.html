@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <script src="scripts/angular-min.js"></script>
+    <script src="scripts/angular-route-min.js"></script>
+    <script src="scripts/home.js"></script>
+    <link href="styles/common.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>Zee Online Shopping</title>
+</head>
+<body style="width:{{windowWidth}}px;" ng-controller="bodyController" >
+    <div class="dvHeaderContainer">
+        <div class="dvWebpageTitle">ZEE Online Shopping</div>
+        <div class="dvCartContainer" ng-click="viewCartItems()"></div>
+        <div id="cartNotification" ng-click="viewCartItems()"></div>
+    </div>
+    <div class="dvBodyContainer">
+       <ng-view></ng-view>
+    </div>
+    <div class="dvFooterContainer">
+        <div class="copyRights">Copyright © 2011 Zee Online Shopping. All Rights Reserved. </div>
+        <div class="dvPrivicy"><u>Legal</u> / <u>Privacy</u></div>
+    </div>
+</body>
+</html>

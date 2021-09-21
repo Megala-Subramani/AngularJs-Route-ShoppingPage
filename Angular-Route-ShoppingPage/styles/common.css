@@ -1,0 +1,173 @@
+﻿body {
+    width: 1590px;
+    height: 720px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+.dvHeaderContainer {
+    width: 100%;
+    margin: auto;
+    height: 10%;
+    background-color: #36c0ff;
+}
+.dvBodyContainer {
+    width: 100%;
+    margin: auto;
+    height: 80%;
+}
+.dvFooterContainer {
+    width: 100%;
+    margin: auto;
+    height: 5%;
+    color: blue;
+}
+.dvWebpageTitle {
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    font-weight: bold;
+    font-size: 34px;
+    text-align: center;
+    color: ghostwhite;
+    display: inline-block;
+}
+.dvCartContainer {
+    position: absolute;
+    right: 24px;
+    top: 9px;
+    width: 44px;
+    height: 54px;
+    content: url(../Images/add-cart.jpg);
+}
+.copyRights {
+    width: 100%;
+    text-align: center;
+}
+.dvPrivicy {
+    text-align: end;
+    margin-top: -18px;
+    margin-right: 23px;
+}
+.dvSlideShowContainer {
+    width: 1260px;
+    height: 210px;
+    cursor: pointer;
+    overflow:hidden;
+}
+.dvSliderParent {
+    width: 5040px;
+    height: 260px;
+}
+
+.dvSliderChildren {
+    width: 1260px;
+    height: 260px;
+    position: relative;
+    float: left;
+}
+.dvDealsOftheDayContainer {
+    width: 100%;
+    height: 56%;
+}
+.dvDODParent, .bodyContent {
+    width: 100%;
+    position:absolute;
+}
+.dvDODParent{
+    height:260px;
+    overflow:hidden
+}
+.dvDODChild {
+    width: 195px;
+    height: 265px;
+    position: relative;
+    float: left;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+.dvDODHeader h4 {
+    text-align: left;
+    line-height: 50px;
+    margin-left: 15px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    font-size: 26px;
+}
+.productRate {
+    position: absolute;
+    margin-top: 100%;
+    width: 100%;
+    text-align: left;
+    margin-left: 12%;
+    color: green;
+}
+
+.productName {
+    position: absolute;
+    margin-top: 87%;
+    width: 100%;
+    text-align: left;
+    margin-left: 12%;
+}
+
+.productImg {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    display: block;
+}
+
+.addCart:hover, .removeCart:hover {
+    background-color: #3768df;
+}
+
+.addCart {
+    position: absolute;
+    margin-top: 118%;
+    width: 85px;
+    text-align: right;
+    height: 34px;
+    line-height: 32px;
+    color: #fbfbfb;
+    margin-left: 92px;
+    padding-right: 10px;
+    background-color: #334e90;
+    border-radius: 4px;
+}
+
+.removeCart {
+    position: absolute;
+    margin-top: 118%;
+    width: 130px;
+    text-align: right;
+    height: 34px;
+    line-height: 32px;
+    color: #fbfbfb;
+    margin-left: 44px;
+    padding-right: 10px;
+    background-color: #334e90;
+    border-radius: 4px;
+}
+
+.productImg:hover, .cartImg:hover {
+    transform: scale(1.2);
+}
+#cartNotification {
+    position: absolute;
+    width: 17px;
+    height: 19px;
+    border: 1px solid white;
+    right: 20px;
+    background-color: #f44336;
+    border-radius: 12px;
+    line-height: 20px;
+    font-size: 10px;
+    top: 13px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    color: white;
+}
